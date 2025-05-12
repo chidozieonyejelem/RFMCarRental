@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+.welcome-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-section {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn, .btn-success, .btn-danger {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    min-width: 180px;
+    margin-top: 30px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-danger, .clear-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.centered-container {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.form-container, .dashboard-container, .filter-sidebar, .car-card, .message-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px 25px 5px 25px;
+}
+
+.form-container input, .form-container select, .form-container textarea, .filter-sidebar input, .filter-sidebar select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.form-container button, .filter-sidebar .btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-container p {
+    margin-bottom: 0;
+}
+
+.filter-sidebar {
+    width: 250px;
+    padding: 20px;
+}
+
+.filter-sidebar label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.filter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.filter-sidebar input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.main-container {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    flex: 1;
+}
+
+.car-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.dashboard-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard-card {
+    background-color: #2a2a2a;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #00cc66;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+.dashboard-card:hover {
+    background-color: #333;
+    color: #00ff88;
+    transform: translateY(-2px);
+}
+
+.message-card {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.flash-message {
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.flash-blue {
+    background-color: #007bff;
+}
+
+.flash-success {
+    background-color: #28a745;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.data-table th, .data-table td {
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+.data-table th {
+    color: #00cc66;
+}
+
+.data-table td {
+    border-top: 1px solid #333;
+}
+
+.edit-link {
+    color: orange;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.delete-link {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.muted { color: grey; }
+
+.center-text {
+    text-align: center;
+}
+
+.left-text   {
+    text-align: left;
+}
+
+.back-btn    {
+    text-align: center;
+}
+
+.top-margin  {
+    margin-top: 20px;
+}
+
+.centered-btn {
+    text-align: center; margin-top: 30px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.wide-form {
+    max-width: 900px;
+}
+
+.narrow-form {
+    max-width: 600px;
+}
+
+.form-wide {
+    max-width: 600px;
+}
+
+.wide-form-container {
+    max-width: 800px;
+}
+
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featured-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.featured-image img, .car-image-full {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.booking-summary p {
+    margin-bottom: 5px;
+}
+
+.total-cost {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.thumbnail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
