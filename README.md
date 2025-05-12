@@ -12,7 +12,6 @@ The information used to complete this project was from [SymfonyCasts PHP Courses
 
 - **HTML**: For structuring the content on the web pages.
 - **CSS**: For styling the layout and providing a responsive and modern user interface.
-- **Flexbox** and **CSS Grid** for layout management.
 - **PHP**: For server-side logic, handling form submissions, managing sessions, and interacting with the database.
 - **MySQL**: For the database, storing car details, user data, booking information, etc.
 - **PDO** (PHP Data Objects): For securely interacting with the database using prepared statements, ensuring protection against SQL injection.
