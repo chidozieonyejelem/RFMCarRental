@@ -4,7 +4,7 @@
 
 RF Motors is a car rental system web application that allows users to browse, book, and manage car rentals. The platform provides features for both users and administrators. Users can view available cars and make bookings. Administrators can manage cars, bookings, users, and messages from the dashboard. 
 
-This was a group project I worked on with @jacobbibat and @Mateusz-gif.
+This was a group project I worked on with [jacobbibat](https://github.com/jacobbibat) and [Mateusz-gif](https://github.com/Mateusz-gif).
 
 The information used to complete this project was from [SymfonyCasts PHP Courses](https://symfonycasts.com/tracks/php).
 
