@@ -40,6 +40,3 @@ The database consists of the following tables:
 - **messages**: Contains user messages and admin replies.
 - **contacts**: Stores user inquiries and admin replies.
 - **payments**: Logs payment transactions for bookings.
-
-## How to Install
-
