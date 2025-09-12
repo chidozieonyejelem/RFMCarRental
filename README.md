@@ -1,6 +1,6 @@
 <h1 align="center">RF Motors</h1>
 
-<img width="1498" alt="Screenshot 2025-05-12 at 11 39 23" src="https://github.com/user-attachments/assets/afcc7f64-967c-463d-a8ac-7cb1adb18525" />
+<img width="1498" alt="Home Page Screenshot" src="https://github.com/user-attachments/assets/afcc7f64-967c-463d-a8ac-7cb1adb18525" />
 
 RF Motors is a car rental system web application that allows users to browse, book, and manage car rentals. The platform provides features for both users and administrators. Users can view available cars and make bookings. Administrators can manage cars, bookings, users, and messages from the dashboard. 
 
